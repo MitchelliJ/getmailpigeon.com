@@ -1,0 +1,12 @@
+{
+  "name": "getmailpigeon.com",
+  "version": "1.0.0",
+  "description": "Pigeon marketing site",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./styles.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
