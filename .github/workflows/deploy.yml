@@ -23,7 +23,7 @@ jobs:
           node-version: "20"
 
       - name: Build
-        run: npm ci && npx tailwindcss -i ./src/input.css -o ./styles.css --minify
+        run: npm ci && npm run build
 
       - name: Install deploy SSH key
         uses: webfactory/ssh-agent@v0.9.0

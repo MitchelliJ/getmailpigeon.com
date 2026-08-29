@@ -4,7 +4,8 @@
   "description": "Pigeon marketing site",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./styles.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./styles.css --minify"
+    "build": "tailwindcss -i ./src/input.css -o ./styles.css --minify && npm run build:html",
+    "build:html": "node scripts/build-html.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
